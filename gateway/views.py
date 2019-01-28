@@ -18,6 +18,8 @@ from pyswagger.contrib.client.requests import Client
 from pyswagger.io import Response as PySwaggerResponse
 from pyswagger.primitives.comm import PrimJSONEncoder
 
+from workflow.permissions import IsSuperUser
+
 from . import exceptions
 from . import models as gtm
 from . import serializers
@@ -53,7 +55,7 @@ class LogicModuleViewSet(viewsets.ModelViewSet):
 
     filter_fields = ('name',)
     filter_backends = (DjangoFilterBackend,)
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = (IsSuperUser,)
     queryset = gtm.LogicModule.objects.all()
     serializer_class = serializers.LogicModuleSerializer
 
