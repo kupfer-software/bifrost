@@ -209,6 +209,8 @@ class APIGatewayView(views.APIView):
                     except cls.DoesNotExist as e:
                         logger.info(e)
                     else:
+                        utils.validate_bifrost_object_access(
+                            request, obj, action='retrieve')
                         data = model_to_dict(obj)
             else:
                 app = self._load_swagger_resource(
@@ -287,7 +289,6 @@ class APIGatewayView(views.APIView):
                 kwargs['pk'] is None):
             raise exceptions.RequestValidationError(
                 'The object ID is missing.', 400)
-
 
     def _get_swagger_data(self, request):
         """
