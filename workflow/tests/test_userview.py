@@ -7,6 +7,10 @@ from ..views import UserViewSet
 from workflow.models import ROLE_ORGANIZATION_ADMIN
 
 
+# ToDo: Update Tests to CoreUser and add test for JsonResponse:
+#   {'detail': No matching CoreUser found.} (see jwt_utils.py)
+
+
 class TolaUserCreateViewsTest(TestCase):
     def setUp(self):
         self.factory = APIRequestFactory()
