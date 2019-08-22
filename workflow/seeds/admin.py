@@ -80,6 +80,7 @@ class OrganizationAdmin(admin.ModelAdmin):
         # Seed SEED_DATA
         seed_env.pk_maps = {
             "workflowlevel1": {"49a4c9d7-8b72-434b-8a48-24540f65a2f3": level1_uuid},
+            "workflow"
             "workflowlevel2": wfl2_uuid_map,
             "profiletypes": profiletype_map,
             "categories": product_category_map,
