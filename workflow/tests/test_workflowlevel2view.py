@@ -825,3 +825,26 @@ class WorkflowLevel2FilterViewsTest(TestCase):
         wfl_uuids = set([_['level2_uuid'] for _ in response.data['results']])
         self.assertIn(str(wkflvl2_1.level2_uuid), wfl_uuids)
         self.assertIn(str(wkflvl2_2.level2_uuid), wfl_uuids)
+
+    def test_filter_workflowlevel2_empty_project_id_org_admin(self):
+        group_org_admin = factories.CoreGroup(name='Org Admin', is_org_level=True,
+                                              permissions=PERMISSIONS_ORG_ADMIN,
+                                              organization=self.core_user.organization)
+        self.core_user.core_groups.add(group_org_admin)
+
+        wkflvl1 = factories.WorkflowLevel1(organization=self.core_user.organization)
+        wkflvl2 = factories.WorkflowLevel2(name='Empty project_id',
+                                             workflowlevel1=wkflvl1)
+        factories.WorkflowLevel2(name='Filled project_id',
+                                 workflowlevel1=wkflvl1,
+                                 project_id=1010)
+
+        request = self.factory.get(
+            f"{reverse('workflowlevel2-list')}?project_id__isnull=true"
+        )
+        request.user = self.core_user
+        view = WorkflowLevel2ViewSet.as_view({'get': 'list'})
+        response = view(request)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(len(response.data['results']), 1)
+        self.assertEqual(response.data['results'][0]['name'], wkflvl2.name)
