@@ -302,6 +302,49 @@ class WorkflowLevel2CreateViewsTest(TestCase):
 
         self.assertEqual(response.status_code, 201)
         self.assertTrue(uuid.UUID(response.data['level2_uuid']))
+        self.assertEqual(response.data['project_id'], None)
+
+    def test_create_workflowlevel2_uuid_with_project_id(self):
+        wflvl1 = factories.WorkflowLevel1(organization=self.core_user.organization)
+        group_wf_team = factories.CoreGroup(name='WF Team',
+                                            permissions=PERMISSIONS_WORKFLOW_TEAM,
+                                            organization=self.core_user.organization)
+        self.core_user.core_groups.add(group_wf_team)
+        wflvl1.core_groups.add(group_wf_team)
+
+        data = {
+            'name': 'Save the Children',
+            'workflowlevel1': wflvl1.pk}
+
+        request = self.factory.post(reverse('workflowlevel2-list') + '?new_project', data)
+        request.user = self.core_user
+        view = WorkflowLevel2ViewSet.as_view({'post': 'create'})
+        response = view(request)
+
+        self.assertEqual(response.status_code, 201)
+        self.assertEqual(response.data['project_id'], 10001)
+
+    def test_create_workflowlevel2_uuid_with_custom_project_id(self):
+        wflvl1 = factories.WorkflowLevel1(organization=self.core_user.organization)
+        group_wf_team = factories.CoreGroup(name='WF Team',
+                                            permissions=PERMISSIONS_WORKFLOW_TEAM,
+                                            organization=self.core_user.organization)
+        self.core_user.core_groups.add(group_wf_team)
+        wflvl1.core_groups.add(group_wf_team)
+
+        data = {
+            'name': 'Save the Children',
+            'workflowlevel1': wflvl1.pk,
+            'project_id': 23,
+        }
+
+        request = self.factory.post(reverse('workflowlevel2-list') + '?new_project', data)
+        request.user = self.core_user
+        view = WorkflowLevel2ViewSet.as_view({'post': 'create'})
+        response = view(request)
+
+        self.assertEqual(response.status_code, 201)
+        self.assertEqual(response.data['project_id'], 23)
 
 
 class WorkflowLevel2UpdateViewsTest(TestCase):

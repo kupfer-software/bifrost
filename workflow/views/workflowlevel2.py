@@ -59,7 +59,13 @@ class WorkflowLevel2ViewSet(viewsets.ModelViewSet):
         return Response(serializer.data)
 
     def perform_create(self, serializer):
+        """
+        Save the user in the created_by-attribute.
+        If `new_project` is passed as query-parameter create a WorkflowLevel2 with project_id.
+        """
         serializer.save(created_by=getattr(self.request.user, 'core_user', None))
+        if 'new_project' in self.request.query_params and 'project_id' not in serializer.validated_data:
+            serializer.instance.set_default_project_id()
 
     ordering = ('name',)
     filter_backends = (
