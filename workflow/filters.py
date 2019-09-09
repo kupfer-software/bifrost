@@ -16,6 +16,7 @@ class DateRangeWidget(django_filters.widgets.SuffixedMultiWidget):
 class WorkflowLevel2Filter(django_filters.FilterSet):
 
     create_date = django_filters.DateFromToRangeFilter(widget=DateRangeWidget())
+    project_id__isnull = django_filters.BooleanFilter(field_name='project_id', lookup_expr='isnull')
     status__short_name = django_filters.BaseInFilter()
     status__uuid = django_filters.BaseInFilter()
 
@@ -28,4 +29,5 @@ class WorkflowLevel2Filter(django_filters.FilterSet):
             'create_date',
             'status__short_name',
             'status__uuid',
+            'project_id',
         ]

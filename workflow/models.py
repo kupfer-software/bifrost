@@ -327,7 +327,7 @@ class WorkflowLevel2(models.Model):
     workflowlevel1 = models.ForeignKey(WorkflowLevel1, verbose_name="Workflow Level 1", on_delete=models.CASCADE, related_name="workflowlevel2", help_text="Primary or parent Workflow")
     create_date = models.DateTimeField("Date Created", default=timezone.now)
     created_by = models.ForeignKey(CoreUser, related_name='workflowlevel2', null=True, blank=True, on_delete=models.SET_NULL)
-    edit_date = models.DateTimeField("Last Edit Date", null=True, blank=True)
+    edit_date = models.DateTimeField("Last Edit Date", auto_now=True)
     core_groups = models.ManyToManyField(CoreGroup, verbose_name='Core groups', blank=True, related_name='workflowlevel2s', related_query_name='workflowlevel2s')
     start_date = models.DateTimeField("Start Date", null=True, blank=True)
     end_date = models.DateTimeField("End Date", null=True, blank=True)
@@ -359,12 +359,9 @@ class WorkflowLevel2(models.Model):
             next_project_id = start_index
         return next_project_id
 
-    def save(self, *args, **kwargs):
-        if not self.project_id:
-            self.project_id = self._get_default_project_id()
-        self.edit_date = timezone.now()
-
-        super(WorkflowLevel2, self).save(*args, **kwargs)
+    def set_default_project_id(self):
+        self.project_id = self._get_default_project_id()
+        self.save()
 
     def __str__(self):
         return self.name
