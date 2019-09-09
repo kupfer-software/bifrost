@@ -359,12 +359,9 @@ class WorkflowLevel2(models.Model):
             next_project_id = start_index
         return next_project_id
 
-    def save(self, *args, **kwargs):
-        if not self.project_id:
-            self.project_id = self._get_default_project_id()
-        self.edit_date = timezone.now()
-
-        super(WorkflowLevel2, self).save(*args, **kwargs)
+    def set_default_project_id(self):
+        self.project_id = self._get_default_project_id()
+        self.save()
 
     def __str__(self):
         return self.name
