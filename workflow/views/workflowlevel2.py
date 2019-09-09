@@ -67,6 +67,11 @@ class WorkflowLevel2ViewSet(viewsets.ModelViewSet):
         if 'new_project' in self.request.query_params and 'project_id' not in serializer.validated_data:
             serializer.instance.set_default_project_id()
 
+    def perform_update(self, serializer):
+        if 'new_project' in self.request.query_params and 'project_id' not in serializer.validated_data:
+            serializer.instance.set_default_project_id()
+        serializer.save()
+
     ordering = ('name',)
     filter_backends = (
         django_filters.rest_framework.DjangoFilterBackend,
