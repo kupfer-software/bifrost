@@ -22,12 +22,12 @@ siteprofiles = [
         "uuid": "900498a7-8630-4c7c-9762-2447cc2178ce",
         "id": "900498a7-8630-4c7c-9762-2447cc2178ce",
         "country": "DE",
-        "name": "Friedrichstraße 233, 10969 Berlin",
-        "address_line1": "Friedrichstraße 233",
+        "name": "Brandenburgische Straße 75, 12277 Berlin",
+        "address_line1": "Brandenburgische Straße 75",
         "address_line2": "",
         "address_line3": "",
         "address_line4": "",
-        "postcode": "10969",
+        "postcode": "12277",
         "city": "Berlin",
         "administrative_level1": "",
         "administrative_level2": "",
@@ -39,8 +39,8 @@ siteprofiles = [
         "workflowlevel2_uuid": [
             "8132d789-9580-45ad-b22a-9384bce0eed6"
         ],
-        "profiletype": 81
-    },
+        "profiletype": 79
+    }, #billing
     {
         "uuid": "485234bd-1bd6-49b9-81b9-7d84161b6b39",
         "id": "485234bd-1bd6-49b9-81b9-7d84161b6b39",
@@ -62,8 +62,8 @@ siteprofiles = [
         "workflowlevel2_uuid": [
             "999d0b08-759f-49d6-b121-e312c3ea17c5"
         ],
-        "profiletype": 80
-    },
+        "profiletype": 79
+    }, #billing
     {
         "uuid": "5b04b3aa-f18e-416b-bf5b-bc9c86786159",
         "id": "5b04b3aa-f18e-416b-bf5b-bc9c86786159",
@@ -85,8 +85,8 @@ siteprofiles = [
         "workflowlevel2_uuid": [
             "6f015067-db3e-40be-8f87-8b20fa347752"
         ],
-        "profiletype": 80
-    },
+        "profiletype": 79
+    }, #billing
     {
         "uuid": "551629e8-bb28-4734-a3e4-7edb239854b2",
         "id": "551629e8-bb28-4734-a3e4-7edb239854b2",
@@ -108,8 +108,8 @@ siteprofiles = [
         "workflowlevel2_uuid": [
             "9e3bda19-49e5-428a-a2cc-ef03153f14bb"
         ],
-        "profiletype": 81
-    },
+        "profiletype": 79
+    }, #billing
     {
         "uuid": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
         "id": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
@@ -131,8 +131,146 @@ siteprofiles = [
         "workflowlevel2_uuid": [
             "7b504be7-36e3-4196-8c60-227b78f8ae96"
         ],
+        "profiletype": 81
+    }, #billing_with_object
+    {
+        #"uuid": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
+        #"id": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
+        "country": "DE",
+        "name": "Genslerstraße 85, 14193 Berlin",
+        "address_line1": "Genslerstraße 85",
+        "address_line2": "",
+        "address_line3": "",
+        "address_line4": "",
+        "postcode": "14193",
+        "city": "Berlin",
+        "administrative_level1": "",
+        "administrative_level2": "",
+        "administrative_level3": "",
+        "administrative_level4": "",
+        "latitude": "0.0000000000000000",
+        "longitude": "0.0000000000000000",
+        "notes": "",
+        "workflowlevel2_uuid": [
+            #"7b504be7-36e3-4196-8c60-227b78f8ae96"
+        ],
+        "profiletype": 81
+    }, #billing_with_object
+    {
+        #"uuid": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
+        #"id": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
+        "country": "DE",
+        "name": "Leopoldstraße 30, 10247 Berlin",
+        "address_line1": "Leopoldstraße 30",
+        "address_line2": "",
+        "address_line3": "",
+        "address_line4": "",
+        "postcode": "10247",
+        "city": "Berlin",
+        "administrative_level1": "",
+        "administrative_level2": "",
+        "administrative_level3": "",
+        "administrative_level4": "",
+        "latitude": "0.0000000000000000",
+        "longitude": "0.0000000000000000",
+        "notes": "",
+        "workflowlevel2_uuid": [
+            #"7b504be7-36e3-4196-8c60-227b78f8ae96"
+        ],
+        "profiletype": 81
+    }, #billing_with_object
+    {
+        #"uuid": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
+        #"id": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
+        "country": "DE",
+        "name": "Waßmannsdorfer Chaussee 16, 13435 Berlin",
+        "address_line1": "Waßmannsdorfer Chaussee 16",
+        "address_line2": "",
+        "address_line3": "",
+        "address_line4": "",
+        "postcode": "13435",
+        "city": "Berlin",
+        "administrative_level1": "",
+        "administrative_level2": "",
+        "administrative_level3": "",
+        "administrative_level4": "",
+        "latitude": "0.0000000000000000",
+        "longitude": "0.0000000000000000",
+        "notes": "",
+        "workflowlevel2_uuid": [
+            #"7b504be7-36e3-4196-8c60-227b78f8ae96"
+        ],
+        "profiletype": 81
+    }, #billing_with_object
+    {
+        #"uuid": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
+        #"id": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
+        "country": "DE",
+        "name": "Septimerstraße 44, 13407 Berlin",
+        "address_line1": "Septimerstraße 44",
+        "address_line2": "",
+        "address_line3": "",
+        "address_line4": "",
+        "postcode": "13407",
+        "city": "Berlin",
+        "administrative_level1": "",
+        "administrative_level2": "",
+        "administrative_level3": "",
+        "administrative_level4": "",
+        "latitude": "0.0000000000000000",
+        "longitude": "0.0000000000000000",
+        "notes": "",
+        "workflowlevel2_uuid": [
+            #"7b504be7-36e3-4196-8c60-227b78f8ae96"
+        ],
         "profiletype": 80
-    }
+    }, #object
+    {
+        #"uuid": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
+        #"id": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
+        "country": "DE",
+        "name": "Karl-Marx-Straße 55, 12043 Berlin",
+        "address_line1": "Karl-Marx-Straße 55",
+        "address_line2": "",
+        "address_line3": "",
+        "address_line4": "",
+        "postcode": "12043",
+        "city": "Berlin",
+        "administrative_level1": "",
+        "administrative_level2": "",
+        "administrative_level3": "",
+        "administrative_level4": "",
+        "latitude": "0.0000000000000000",
+        "longitude": "0.0000000000000000",
+        "notes": "",
+        "workflowlevel2_uuid": [
+            #"7b504be7-36e3-4196-8c60-227b78f8ae96"
+        ],
+        "profiletype": 80
+    }, #object
+    {
+        #"uuid": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
+        #"id": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
+        "country": "DE",
+        "name": "Ehrenstraße 44, 50672 Köln",
+        "address_line1": "Ehrenstraße 44",
+        "address_line2": "",
+        "address_line3": "",
+        "address_line4": "",
+        "postcode": "50672",
+        "city": "Berlin",
+        "administrative_level1": "",
+        "administrative_level2": "",
+        "administrative_level3": "",
+        "administrative_level4": "",
+        "latitude": "0.0000000000000000",
+        "longitude": "0.0000000000000000",
+        "notes": "",
+        "workflowlevel2_uuid": [
+            #"7b504be7-36e3-4196-8c60-227b78f8ae96"
+        ],
+        "profiletype": 80
+    }  #object
 ]
 
 
@@ -142,8 +280,8 @@ contacts = [
     {
         "uuid": "61a012e5-d70b-4801-acb3-507b913fcd54",
         "id": "61a012e5-d70b-4801-acb3-507b913fcd54",
-        "first_name": "Max",
-        "last_name": "Mustermann",
+        "first_name": "Emalia",
+        "last_name": "Whittle",
         "customer_type": "customer",
         "company": "Mustermann GmbH",
         "siteprofile_uuids": ["900498a7-8630-4c7c-9762-2447cc2178ce"],
@@ -160,8 +298,160 @@ contacts = [
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
-        "first_name": "Mia",
-        "last_name": "Musterfrau",
+        "first_name": "Violet",
+        "last_name": "Ferguson",
+        "customer_type": "customer",
+        "company": None,
+        "siteprofile_uuids": ["551629e8-bb28-4734-a3e4-7edb239854b2"],
+        "emails": [{"type": "office", "email": "mia.musterfrau@gmail.com"}],
+        "phones": [{"type": "home", "number": "01721648387"}],
+        "notes": None,
+        "workflowlevel1_uuids": ["49a4c9d7-8b72-434b-8a48-24540f65a2f3"],
+        "workflowlevel2_uuids": [
+            "9e3bda19-49e5-428a-a2cc-ef03153f14bb",
+            "7b504be7-36e3-4196-8c60-227b78f8ae96",
+            "999d0b08-759f-49d6-b121-e312c3ea17c5",
+        ],
+        "contact_type": None,
+    },
+    {
+        "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "first_name": "Kara",
+        "last_name": "Barnes",
+        "customer_type": "customer",
+        "company": None,
+        "siteprofile_uuids": ["551629e8-bb28-4734-a3e4-7edb239854b2"],
+        "emails": [{"type": "office", "email": "mia.musterfrau@gmail.com"}],
+        "phones": [{"type": "home", "number": "01721648387"}],
+        "notes": None,
+        "workflowlevel1_uuids": ["49a4c9d7-8b72-434b-8a48-24540f65a2f3"],
+        "workflowlevel2_uuids": [
+            "9e3bda19-49e5-428a-a2cc-ef03153f14bb",
+            "7b504be7-36e3-4196-8c60-227b78f8ae96",
+            "999d0b08-759f-49d6-b121-e312c3ea17c5",
+        ],
+        "contact_type": None,
+    },
+    {
+        "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "first_name": "Aleena",
+        "last_name": "Wilkins",
+        "customer_type": "customer",
+        "company": None,
+        "siteprofile_uuids": ["551629e8-bb28-4734-a3e4-7edb239854b2"],
+        "emails": [{"type": "office", "email": "mia.musterfrau@gmail.com"}],
+        "phones": [{"type": "home", "number": "01721648387"}],
+        "notes": None,
+        "workflowlevel1_uuids": ["49a4c9d7-8b72-434b-8a48-24540f65a2f3"],
+        "workflowlevel2_uuids": [
+            "9e3bda19-49e5-428a-a2cc-ef03153f14bb",
+            "7b504be7-36e3-4196-8c60-227b78f8ae96",
+            "999d0b08-759f-49d6-b121-e312c3ea17c5",
+        ],
+        "contact_type": None,
+    },
+    {
+        "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "first_name": "Jasmin",
+        "last_name": "Leonard",
+        "customer_type": "customer",
+        "company": None,
+        "siteprofile_uuids": ["551629e8-bb28-4734-a3e4-7edb239854b2"],
+        "emails": [{"type": "office", "email": "mia.musterfrau@gmail.com"}],
+        "phones": [{"type": "home", "number": "01721648387"}],
+        "notes": None,
+        "workflowlevel1_uuids": ["49a4c9d7-8b72-434b-8a48-24540f65a2f3"],
+        "workflowlevel2_uuids": [
+            "9e3bda19-49e5-428a-a2cc-ef03153f14bb",
+            "7b504be7-36e3-4196-8c60-227b78f8ae96",
+            "999d0b08-759f-49d6-b121-e312c3ea17c5",
+        ],
+        "contact_type": None,
+    },
+    {
+        "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "first_name": "Lilly",
+        "last_name": "Watson",
+        "customer_type": "customer",
+        "company": None,
+        "siteprofile_uuids": ["551629e8-bb28-4734-a3e4-7edb239854b2"],
+        "emails": [{"type": "office", "email": "mia.musterfrau@gmail.com"}],
+        "phones": [{"type": "home", "number": "01721648387"}],
+        "notes": None,
+        "workflowlevel1_uuids": ["49a4c9d7-8b72-434b-8a48-24540f65a2f3"],
+        "workflowlevel2_uuids": [
+            "9e3bda19-49e5-428a-a2cc-ef03153f14bb",
+            "7b504be7-36e3-4196-8c60-227b78f8ae96",
+            "999d0b08-759f-49d6-b121-e312c3ea17c5",
+        ],
+        "contact_type": None,
+    },
+    {
+        "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "first_name": "Ema",
+        "last_name": "Becker",
+        "customer_type": "customer",
+        "company": None,
+        "siteprofile_uuids": ["551629e8-bb28-4734-a3e4-7edb239854b2"],
+        "emails": [{"type": "office", "email": "mia.musterfrau@gmail.com"}],
+        "phones": [{"type": "home", "number": "01721648387"}],
+        "notes": None,
+        "workflowlevel1_uuids": ["49a4c9d7-8b72-434b-8a48-24540f65a2f3"],
+        "workflowlevel2_uuids": [
+            "9e3bda19-49e5-428a-a2cc-ef03153f14bb",
+            "7b504be7-36e3-4196-8c60-227b78f8ae96",
+            "999d0b08-759f-49d6-b121-e312c3ea17c5",
+        ],
+        "contact_type": None,
+    },
+    {
+        "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "first_name": "Parag",
+        "last_name": "Narvekar",
+        "customer_type": "customer",
+        "company": None,
+        "siteprofile_uuids": ["551629e8-bb28-4734-a3e4-7edb239854b2"],
+        "emails": [{"type": "office", "email": "mia.musterfrau@gmail.com"}],
+        "phones": [{"type": "home", "number": "01721648387"}],
+        "notes": None,
+        "workflowlevel1_uuids": ["49a4c9d7-8b72-434b-8a48-24540f65a2f3"],
+        "workflowlevel2_uuids": [
+            "9e3bda19-49e5-428a-a2cc-ef03153f14bb",
+            "7b504be7-36e3-4196-8c60-227b78f8ae96",
+            "999d0b08-759f-49d6-b121-e312c3ea17c5",
+        ],
+        "contact_type": None,
+    },
+    {
+        "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "first_name": "Kutay",
+        "last_name": "Yegül",
+        "customer_type": "customer",
+        "company": None,
+        "siteprofile_uuids": ["551629e8-bb28-4734-a3e4-7edb239854b2"],
+        "emails": [{"type": "office", "email": "mia.musterfrau@gmail.com"}],
+        "phones": [{"type": "home", "number": "01721648387"}],
+        "notes": None,
+        "workflowlevel1_uuids": ["49a4c9d7-8b72-434b-8a48-24540f65a2f3"],
+        "workflowlevel2_uuids": [
+            "9e3bda19-49e5-428a-a2cc-ef03153f14bb",
+            "7b504be7-36e3-4196-8c60-227b78f8ae96",
+            "999d0b08-759f-49d6-b121-e312c3ea17c5",
+        ],
+        "contact_type": None,
+    },
+    {
+        "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
+        "first_name": "Franziska",
+        "last_name": "Holz",
         "customer_type": "customer",
         "company": None,
         "siteprofile_uuids": ["551629e8-bb28-4734-a3e4-7edb239854b2"],
@@ -306,50 +596,6 @@ appointments = [
         "start_date": "2019-08-09T07:00:00+02:00",
         "end_date": "2019-08-09T09:00:00+02:00",
         "type": "repair",
-        "address": "Tempelhofer Ufer 13, 10963 Berlin",
-        "siteprofile_uuid": "551629e8-bb28-4734-a3e4-7edb239854b2",
-        "invitee_uuids": [
-            "44852b4a-4e80-448e-8936-71c4c294a1b7",
-            "3418abb1-faff-4f38-86d9-606f3f542ef5",
-            "40517e88-26cb-4b34-853f-ed383c1af0d6",
-        ],
-        "workflowlevel2_uuids": ["9e3bda19-49e5-428a-a2cc-ef03153f14bb"],
-        "contact_uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
-        "summary": "",
-    },
-    {
-        "uuid": "138b1db2-322d-4f4f-bd04-a81737adc15e",
-        "id": "138b1db2-322d-4f4f-bd04-a81737adc15e",
-        "notes": [
-            {"id": 1985, "note": "Bitte Ventile prüfen und austauschen.", "type": 1},
-            {"id": 1986, "note": "", "type": 3},
-        ],
-        "name": "Kupfer Appointment",
-        "start_date": "2019-08-16T07:00:00+02:00",
-        "end_date": "2019-08-16T09:00:00+02:00",
-        "type": "repair",
-        "address": "Tempelhofer Ufer 13, 10963 Berlin",
-        "siteprofile_uuid": "551629e8-bb28-4734-a3e4-7edb239854b2",
-        "invitee_uuids": [
-            "44852b4a-4e80-448e-8936-71c4c294a1b7",
-            "3418abb1-faff-4f38-86d9-606f3f542ef5",
-            "40517e88-26cb-4b34-853f-ed383c1af0d6",
-        ],
-        "workflowlevel2_uuids": ["9e3bda19-49e5-428a-a2cc-ef03153f14bb"],
-        "contact_uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
-        "summary": "",
-    },
-    {
-        "uuid": "bcc6c746-faab-489d-9d37-eb7d431e4e9d",
-        "id": "bcc6c746-faab-489d-9d37-eb7d431e4e9d",
-        "notes": [
-            {"id": 1987, "note": "Bitte Ventile prüfen und austauschen.", "type": 1},
-            {"id": 1988, "note": "", "type": 3},
-        ],
-        "name": "Kupfer Appointment",
-        "start_date": "2019-08-23T07:00:00+02:00",
-        "end_date": "2019-08-23T09:00:00+02:00",
-        "type": "installation",
         "address": "Tempelhofer Ufer 13, 10963 Berlin",
         "siteprofile_uuid": "551629e8-bb28-4734-a3e4-7edb239854b2",
         "invitee_uuids": [
@@ -708,6 +954,54 @@ workflowlevel2s = [
     },
     {
         "level2_uuid": "7b504be7-36e3-4196-8c60-227b78f8ae96",
+        "description": "Bitte Standardwartung durchführen",
+        "name": "New Kupfer Project",
+        "parent_workflowlevel2": 0,
+        "workflowlevel1": 18,
+        "type": "c17709b0-3acf-4a93-9d14-a5a5f59fcb77",
+    },
+    {
+        "level2_uuid": "999d0b08-759f-49d6-b121-e312c3ea17c5",
+        "description": "Bitte Standardwartung durchführen",
+        "name": "New Kupfer Project",
+        "parent_workflowlevel2": 0,
+        "workflowlevel1": 18,
+        "type": "c17709b0-3acf-4a93-9d14-a5a5f59fcb77",
+    },
+    {
+        "level2_uuid": "999d0b08-759f-49d6-b121-e312c3ea17c5",
+        "description": "Bitte Standardwartung durchführen",
+        "name": "New Kupfer Project",
+        "parent_workflowlevel2": 0,
+        "workflowlevel1": 18,
+        "type": "c17709b0-3acf-4a93-9d14-a5a5f59fcb77",
+    },
+    {
+        "level2_uuid": "999d0b08-759f-49d6-b121-e312c3ea17c5",
+        "description": "Bitte Standardwartung durchführen",
+        "name": "New Kupfer Project",
+        "parent_workflowlevel2": 0,
+        "workflowlevel1": 18,
+        "type": "c17709b0-3acf-4a93-9d14-a5a5f59fcb77",
+    },
+    {
+        "level2_uuid": "999d0b08-759f-49d6-b121-e312c3ea17c5",
+        "description": "Bitte Standardwartung durchführen",
+        "name": "New Kupfer Project",
+        "parent_workflowlevel2": 0,
+        "workflowlevel1": 18,
+        "type": "c17709b0-3acf-4a93-9d14-a5a5f59fcb77",
+    },
+    {
+        "level2_uuid": "999d0b08-759f-49d6-b121-e312c3ea17c5",
+        "description": "Bitte Standardwartung durchführen",
+        "name": "New Kupfer Project",
+        "parent_workflowlevel2": 0,
+        "workflowlevel1": 18,
+        "type": "c17709b0-3acf-4a93-9d14-a5a5f59fcb77",
+    },
+    {
+        "level2_uuid": "999d0b08-759f-49d6-b121-e312c3ea17c5",
         "description": "Bitte Standardwartung durchführen",
         "name": "New Kupfer Project",
         "parent_workflowlevel2": 0,
