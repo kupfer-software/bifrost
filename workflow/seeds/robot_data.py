@@ -1,3 +1,5 @@
+import datetime
+
 # Extension Service
 
 projectextensions = [
@@ -363,7 +365,7 @@ contacts = [
             "6f015067-db3e-40be-8f87-8b20fa347752",
         ],
         "contact_type": None,
-    },
+    }, # Emalia
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -380,7 +382,7 @@ contacts = [
             "999d0b08-759f-49d6-b121-e312c3ea17c5",
         ],
         "contact_type": None,
-    },
+    }, # Violet
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -397,7 +399,7 @@ contacts = [
             "6f015067-db3e-40be-8f87-8b20fa347752",
         ],
         "contact_type": None,
-    },
+    }, # Kara
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -414,7 +416,7 @@ contacts = [
             "7b504be7-36e3-4196-8c60-227b78f8ae96",
         ],
         "contact_type": None,
-    },
+    }, # Aleena
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -431,7 +433,7 @@ contacts = [
             "37c40d1b-fe9b-4174-86aa-b77adbb739a8",
         ],
         "contact_type": None,
-    },
+    }, # Jasmin
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -448,7 +450,7 @@ contacts = [
             "fd98dce0-24f9-4f42-a0f7-febeff3b1174",
         ],
         "contact_type": None,
-    },
+    }, # Lilly
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -466,7 +468,7 @@ contacts = [
             "a12e9ec2-e9cd-45e0-849c-ddbc74293bc9",
         ],
         "contact_type": None,
-    },
+    }, # Ema
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -484,7 +486,7 @@ contacts = [
             "6ecf272c-b574-404e-a4eb-e9b9955c72ce",
         ],
         "contact_type": None,
-    },
+    }, # Parag
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -502,7 +504,7 @@ contacts = [
             "5aa823a9-d3c6-4c6d-92fa-ec1e92c5ee3d",
         ],
         "contact_type": None,
-    },
+    }, # Kutay
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -520,8 +522,18 @@ contacts = [
             "7ac41a5c-0a4c-4fff-a1c7-92dc25bc7dba",
         ],
         "contact_type": None,
-    },
+    }, # Franziska
 ]
+
+today = datetime.datetime.now().date()
+delta = datetime.date.weekday(today)
+
+Monday = today + datetime.timedelta(days=-delta)
+Tuesday = today + datetime.timedelta(days=1-delta)
+Wednesday = today + datetime.timedelta(days=2-delta)
+Thursday = today + datetime.timedelta(days=3-delta)
+Friday = today + datetime.timedelta(days=4-delta)
+
 
 appointments = [
     {
@@ -532,16 +544,16 @@ appointments = [
             {"id": 1972, "note": "", "type": 3},
         ],
         "name": "Kupfer Appointment",
-        "start_date": "2019-07-30T07:00:00+02:00",
-        "end_date": "2019-07-30T09:00:00+02:00",
+        "start_date": f"{Monday}T14:10:00+02:00",
+        "end_date": f"{Monday}T16:10:00+02:00",
         "type": "consultation",
-        "address": "Friedrichstraße 233, 10969 Berlin",
-        "siteprofile_uuid": "900498a7-8630-4c7c-9762-2447cc2178ce",
-        "invitee_uuids": ["3418abb1-faff-4f38-86d9-606f3f542ef5"],
-        "workflowlevel2_uuids": ["8132d789-9580-45ad-b22a-9384bce0eed6"],
-        "contact_uuid": "61a012e5-d70b-4801-acb3-507b913fcd54",
+        "address": "Waßmannsdorfer Chaussee 16, 13435 Berlin",
+        "siteprofile_uuid": "4afb4661-918b-43b3-9555-5868b1922359",
+        "invitee_uuids": [],
+        "workflowlevel2_uuids": ["3a63d21a-c111-405b-beaf-a3a0920bc9ac"],
+        "contact_uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "summary": "",
-    },
+    }, # Parag with billing
     {
         "uuid": "878db099-b8c1-4482-b4a8-11e26168c933",
         "id": "878db099-b8c1-4482-b4a8-11e26168c933",
@@ -550,8 +562,8 @@ appointments = [
             {"id": 1974, "note": "", "type": 3},
         ],
         "name": "Kupfer Appointment",
-        "start_date": "2019-07-31T07:00:00+02:00",
-        "end_date": "2019-07-31T16:00:00+02:00",
+        "start_date": f"{Tuesday}T06:25:00+02:00",
+        "end_date": f"{Tuesday}T08:25:00+02:00",
         "type": "installation",
         "address": "Ossastraße 44, 12045 Berlin",
         "siteprofile_uuid": "5b04b3aa-f18e-416b-bf5b-bc9c86786159",
@@ -563,7 +575,7 @@ appointments = [
         "workflowlevel2_uuids": ["6f015067-db3e-40be-8f87-8b20fa347752"],
         "contact_uuid": "61a012e5-d70b-4801-acb3-507b913fcd54",
         "summary": "",
-    },
+    }, # Aleena with billing
     {
         "uuid": "edeb1722-5b43-4eb0-ae52-b5598e40e704",
         "id": "edeb1722-5b43-4eb0-ae52-b5598e40e704",
@@ -572,8 +584,8 @@ appointments = [
             {"id": 1975, "note": "Bitte Standardwartung durchführen", "type": 1},
         ],
         "name": "Kupfer Appointment",
-        "start_date": "2019-08-01T07:00:00+02:00",
-        "end_date": "2019-08-01T09:00:00+02:00",
+        "start_date": f"{Tuesday}T11:50:00+02:00",
+        "end_date": f"{Tuesday}T14:10:00+02:00",
         "type": "maintenance",
         "address": "Tempelhofer Ufer 13, 10963 Berlin",
         "siteprofile_uuid": "551629e8-bb28-4734-a3e4-7edb239854b2",
@@ -581,7 +593,7 @@ appointments = [
         "workflowlevel2_uuids": ["9e3bda19-49e5-428a-a2cc-ef03153f14bb"],
         "contact_uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "summary": "",
-    },
+    }, # Jasmin with billing
     {
         "uuid": "ed4c7e5a-5211-486e-a0ca-fcde746a8e2e",
         "id": "ed4c7e5a-5211-486e-a0ca-fcde746a8e2e",
@@ -590,8 +602,8 @@ appointments = [
             {"id": 1978, "note": "", "type": 3},
         ],
         "name": "Kupfer Appointment",
-        "start_date": "2019-08-01T10:00:00+02:00",
-        "end_date": "2019-08-01T12:00:00+02:00",
+        "start_date": f"{Wednesday}T06:25:00+02:00",
+        "end_date": f"{Thursday}T06:25:00+02:00",
         "type": "maintenance",
         "address": "Urbanstraße 76, 10967 Berlin",
         "siteprofile_uuid": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
@@ -599,7 +611,7 @@ appointments = [
         "workflowlevel2_uuids": ["7b504be7-36e3-4196-8c60-227b78f8ae96"],
         "contact_uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "summary": "",
-    },
+    }, # Lilly with billing
     {
         "uuid": "9ba34824-a224-4da9-8ace-e24a1006c231",
         "id": "9ba34824-a224-4da9-8ace-e24a1006c231",
@@ -608,8 +620,8 @@ appointments = [
             {"id": 1980, "note": "", "type": 3},
         ],
         "name": "Kupfer Appointment",
-        "start_date": "2019-08-01T13:00:00+02:00",
-        "end_date": "2019-08-01T15:00:00+02:00",
+        "start_date": f"{Thursday}T10:25:00+02:00",
+        "end_date": f"{Thursday}T13:25:00+02:00",
         "type": "maintenance",
         "address": "Lehmbruckstraße 12, 10245 Berlin",
         "siteprofile_uuid": "485234bd-1bd6-49b9-81b9-7d84161b6b39",
@@ -617,7 +629,7 @@ appointments = [
         "workflowlevel2_uuids": ["999d0b08-759f-49d6-b121-e312c3ea17c5"],
         "contact_uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "summary": "",
-    },
+    }, # Ema with object
     {
         "uuid": "951609b6-32e9-43e6-8f24-692462a81496",
         "id": "951609b6-32e9-43e6-8f24-692462a81496",
@@ -626,8 +638,8 @@ appointments = [
             {"id": 1982, "note": "", "type": 3},
         ],
         "name": "Kupfer Appointment",
-        "start_date": "2019-08-02T07:00:00+02:00",
-        "end_date": "2019-08-02T16:00:00+02:00",
+        "start_date": f"{Thursday}T19:25:00+02:00",
+        "end_date": f"{Thursday}T21:25:00+02:00",
         "type": "installation",
         "address": "Friedrichstraße 233, 10969 Berlin",
         "siteprofile_uuid": "900498a7-8630-4c7c-9762-2447cc2178ce",
@@ -639,7 +651,7 @@ appointments = [
         "workflowlevel2_uuids": ["8132d789-9580-45ad-b22a-9384bce0eed6"],
         "contact_uuid": "61a012e5-d70b-4801-acb3-507b913fcd54",
         "summary": "",
-    },
+    }, # Kutay with object
     {
         "uuid": "ae4bde84-7f02-436f-b666-70d032ee8d61",
         "id": "ae4bde84-7f02-436f-b666-70d032ee8d61",
@@ -648,8 +660,8 @@ appointments = [
             {"id": 1983, "note": "Bitte Ventile prüfen und austauschen.", "type": 1},
         ],
         "name": "Kupfer Appointment",
-        "start_date": "2019-08-09T07:00:00+02:00",
-        "end_date": "2019-08-09T09:00:00+02:00",
+        "start_date": f"{Friday}T10:00:00+02:00",
+        "end_date": f"{Friday}T11:50:00+02:00",
         "type": "repair",
         "address": "Tempelhofer Ufer 13, 10963 Berlin",
         "siteprofile_uuid": "551629e8-bb28-4734-a3e4-7edb239854b2",
@@ -661,6 +673,66 @@ appointments = [
         "workflowlevel2_uuids": ["9e3bda19-49e5-428a-a2cc-ef03153f14bb"],
         "contact_uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "summary": "",
+    }, # Franziska with object
+    {
+        "uuid": "0be0eda0-bcd1-4126-84c3-96975250025c",
+        "id": "0be0eda0-bcd1-4126-84c3-96975250025c",
+        "contact": None,
+        "notes": [
+            {
+                "id": 3220,
+                "note": "",
+                "type": 1
+            },
+            {
+                "id": 3221,
+                "note": "",
+                "type": 3
+            }
+        ],
+        "driving_times": [],
+        "name": "Abwesend",
+        "start_date": f"{Wednesday}T11:40:00+02:00",
+        "end_date": f"{Wednesday}T13:40:00+02:00",
+        "type": "out-of-office",
+        "address": "Abwesend",
+        "siteprofile_uuid": None,
+        "invitee_uuids": [],
+        "workflowlevel2_uuids": [],
+        "contact_uuid": None,
+        "summary": "",
+        "location": None
+    },
+    {
+        "uuid": "62e90b81-00f1-4d1c-b12e-7df0edceaab7",
+        "id": "62e90b81-00f1-4d1c-b12e-7df0edceaab7",
+        "contact": None,
+        "notes": [
+            {
+                "id": 3222,
+                "note": "",
+                "type": 1
+            },
+            {
+                "id": 3223,
+                "note": "",
+                "type": 3
+            }
+        ],
+        "driving_times": [],
+        "name": "Abwesend",
+        "start_date": f"{Monday}T08:40:00+02:00",
+        "end_date": f"{Monday}T11:40:00+02:00",
+        "type": "out-of-office",
+        "address": "Abwesend",
+        "siteprofile_uuid": None,
+        "invitee_uuids": [
+            "acca56ea-e088-4cd8-bcfa-80545bab2f95" # !!!!!!!!!
+        ],
+        "workflowlevel2_uuids": [],
+        "contact_uuid": None,
+        "summary": "",
+        "location": None
     },
 ]
 
