@@ -192,8 +192,6 @@ class SeedLogicModule(SeedBase):
         for date_field_name, days_delta in update_dates_dict.items():
             if days_delta == "week_of_the_org_created_week":
                 self.set_week_of_the_org_created_week(post_data, date_field_name)
-            elif days_delta == "current_week":
-                self.current_week(post_data, date_field_name)
             else:
                 self.update_dates(post_data, date_field_name, days_delta)
 
@@ -222,9 +220,6 @@ class SeedLogicModule(SeedBase):
                                     original_date.hour, original_date.minute,
                                     tzinfo=original_date.tzinfo) + timedelta(days=delta_days + delta_weeks * 7)
             item[date_field_name] = new_datetime.isoformat()
-
-    def current_week(self, post_data, date_field_name):
-        pass
 
     def upload_file(self, url, document, upload_files: dict):
         """
