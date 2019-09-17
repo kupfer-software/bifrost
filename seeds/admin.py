@@ -12,8 +12,6 @@ from workflow.models import Organization
 
 from seeds.seed import SeedEnv, SeedDataMesh, SeedBifrost, SeedLogicModule
 
-from . import data
-
 
 class OrganizationAdmin(admin.ModelAdmin):
     list_display = ("name", "create_date", "edit_date", "organization_actions")
@@ -40,7 +38,12 @@ class OrganizationAdmin(admin.ModelAdmin):
     organization_actions.allow_tags = True
 
     @staticmethod
-    def provide_seed(request, organization_uuid: string):
+    def provide_seed(request, organization_uuid: string, is_robot_test=False):
+        if is_robot_test:
+            from seeds.data import robot_data as data
+        else:
+            from seeds.data import data
+
         # Get and validate organization
         try:
             organization = Organization.objects.get(organization_uuid=organization_uuid)
