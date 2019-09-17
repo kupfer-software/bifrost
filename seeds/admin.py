@@ -7,6 +7,8 @@ from django.contrib import admin, messages
 from django.shortcuts import redirect
 from django.urls import reverse, re_path
 from django.utils.html import format_html
+from rest_framework.response import Response
+from rest_framework import status
 
 from workflow.models import Organization
 
@@ -96,4 +98,6 @@ class OrganizationAdmin(admin.ModelAdmin):
         seed_data_mesh.seed(seed_env.pk_maps, organization)
 
         messages.success(request, f"{organization} - Seed successful.")
+        if is_robot_test:
+            return Response(status=status.HTTP_201_CREATED)
         return redirect(request.META["HTTP_REFERER"])
