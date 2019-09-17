@@ -10,7 +10,7 @@ from django.utils.html import format_html
 
 from workflow.models import Organization
 
-from workflow.seeds.seed import SeedEnv, SeedDataMesh, SeedBifrost, SeedLogicModule
+from seeds.seed import SeedEnv, SeedDataMesh, SeedBifrost, SeedLogicModule
 
 from . import data
 
