@@ -5,8 +5,8 @@ import pytest
 from django.utils.dateparse import parse_datetime
 
 from datamesh.models import JoinRecord
-from workflow.seeds.seed import SeedDataMesh, SeedEnv, SeedLogicModule
 from datamesh.tests.fixtures import org, relationship
+from seeds.seed import SeedDataMesh, SeedEnv, SeedLogicModule
 
 
 @pytest.mark.django_db()

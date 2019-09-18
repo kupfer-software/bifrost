@@ -7,12 +7,12 @@ from django.contrib import admin, messages
 from django.shortcuts import redirect
 from django.urls import reverse, re_path
 from django.utils.html import format_html
+from rest_framework.response import Response
+from rest_framework import status
 
 from workflow.models import Organization
 
-from workflow.seeds.seed import SeedEnv, SeedDataMesh, SeedBifrost, SeedLogicModule
-
-from . import data
+from seeds.seed import SeedEnv, SeedDataMesh, SeedBifrost, SeedLogicModule
 
 
 class OrganizationAdmin(admin.ModelAdmin):
@@ -40,7 +40,12 @@ class OrganizationAdmin(admin.ModelAdmin):
     organization_actions.allow_tags = True
 
     @staticmethod
-    def provide_seed(request, organization_uuid: string):
+    def provide_seed(request, organization_uuid: string, is_robot_test=False):
+        if is_robot_test:
+            from seeds.data import robot_data as data
+        else:
+            from seeds.data import data
+
         # Get and validate organization
         try:
             organization = Organization.objects.get(organization_uuid=organization_uuid)
@@ -93,4 +98,6 @@ class OrganizationAdmin(admin.ModelAdmin):
         seed_data_mesh.seed(seed_env.pk_maps, organization)
 
         messages.success(request, f"{organization} - Seed successful.")
+        if is_robot_test:
+            return Response(status=status.HTTP_201_CREATED)
         return redirect(request.META["HTTP_REFERER"])
