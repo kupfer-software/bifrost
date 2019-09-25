@@ -1,13 +1,15 @@
 import json
 import logging
 import string
+import requests
+
 from copy import deepcopy
 from datetime import timedelta, date, datetime
 from mimetypes import MimeTypes
+from simplejson import JSONDecodeError
 from typing import List, Tuple, Dict, Any
 from urllib import request
 
-import requests
 from django.conf import settings
 from django.contrib import messages
 from django.http import HttpRequest
@@ -264,12 +266,22 @@ class SeedLogicModule(SeedBase):
         return responses
 
     def _build_map(self, responses, data):
+        """
+        Builds map from created object primary_key to seed.entry id.
+        """
+
         pk_map = {}
         for i, entry in enumerate(data):
             try:
                 pk_map[entry["id"]] = responses[i].json()["id"]
             except KeyError:
                 raise KeyError(f"Key 'id' not found in {entry} or in {responses[i].json()}")
+            except JSONDecodeError:
+                logger.error(responses[i].content)
+                raise Exception(
+                    f"Invalid seed data in {entry}. For more details, check logs."
+                )
+
         return pk_map
 
     def seed(self):
@@ -305,6 +317,19 @@ class SeedLogicModule(SeedBase):
                 self.seed_env.pk_maps[model_endpoint] = self._build_map(
                     responses, post_data
                 )
+
+    def clear_seed(self):
+        for logic_module_name in self.seed_data.keys():
+            logic_module = LogicModule.objects.get(name=str(logic_module_name))
+            seed_items = self.seed_data[logic_module_name].items()
+            for model_endpoint, endpoint_attrs in seed_items:
+                if endpoint_attrs.get("skip_delete", False):
+                    continue
+                url = f"{logic_module.endpoint}/{model_endpoint}/"
+                response = requests.get(url, headers=self.seed_env.headers)
+                seeded = response.json()["results"]
+                for seed in seeded:
+                    requests.delete(f"{url}{seed['id']}", headers=self.seed_env.headers)
 
 
 class SeedDataMesh(SeedBase):

@@ -636,6 +636,7 @@ SEED_DATA = {
         "time-log-entry": {
             "validate": False,
             "data": time_log_entries,
+            "skip_delete": True,
             "update_fields": {
                 "time_event": "time-event",
             },
