@@ -14,6 +14,7 @@ urlpatterns = [
     path('datamesh/', include('datamesh.urls')),
     path('', include('gateway.urls')),
     path('', include('workflow.urls')),
+    path('', include('seeds.urls')),
     # Auth backend URL's
     path('oauth/',
          include('oauth2_provider_jwt.urls', namespace='oauth2_provider_jwt')),

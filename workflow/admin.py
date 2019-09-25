@@ -6,7 +6,7 @@ from simple_history.admin import SimpleHistoryAdmin
 from .models import (CoreUser, CoreGroup, Organization, WorkflowLevel1, WorkflowLevel2,
                      WorkflowLevel2Sort, WorkflowTeam, EmailTemplate, Industry,
                      WorkflowLevelStatus)
-from .seeds.admin import OrganizationAdmin
+from seeds.admin import OrganizationAdmin
 
 
 class WorkflowTeamAdmin(admin.ModelAdmin):
