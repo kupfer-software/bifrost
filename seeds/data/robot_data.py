@@ -16,7 +16,7 @@ projectextensions = [
     {"workflowlevel2_uuid": "5aa823a9-d3c6-4c6d-92fa-ec1e92c5ee3d", "id": "not needed"},
     {"workflowlevel2_uuid": "f0ad19c1-a09b-4e05-a96c-804d6ef3efa8", "id": "not needed"},
     {"workflowlevel2_uuid": "af4c9679-5b2c-4f75-8014-f384bca3c5ef", "id": "not needed"},
-    {"workflowlevel2_uuid": "7ac41a5c-0a4c-4fff-a1c7-92dc25bc7dba", "id": "not needed"}
+    {"workflowlevel2_uuid": "7ac41a5c-0a4c-4fff-a1c7-92dc25bc7dba", "id": "not needed"},
 ]
 
 
@@ -47,11 +47,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "8132d789-9580-45ad-b22a-9384bce0eed6"
-        ],
-        "profiletype": 79
-    }, #billing
+        "workflowlevel2_uuid": ["8132d789-9580-45ad-b22a-9384bce0eed6"],
+        "profiletype": 79,
+    },  # billing
     {
         "uuid": "485234bd-1bd6-49b9-81b9-7d84161b6b39",
         "id": "485234bd-1bd6-49b9-81b9-7d84161b6b39",
@@ -70,11 +68,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "999d0b08-759f-49d6-b121-e312c3ea17c5"
-        ],
-        "profiletype": 79
-    }, #billing
+        "workflowlevel2_uuid": ["999d0b08-759f-49d6-b121-e312c3ea17c5"],
+        "profiletype": 79,
+    },  # billing
     {
         "uuid": "5b04b3aa-f18e-416b-bf5b-bc9c86786159",
         "id": "5b04b3aa-f18e-416b-bf5b-bc9c86786159",
@@ -93,11 +89,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "6f015067-db3e-40be-8f87-8b20fa347752"
-        ],
-        "profiletype": 79
-    }, #billing
+        "workflowlevel2_uuid": ["6f015067-db3e-40be-8f87-8b20fa347752"],
+        "profiletype": 79,
+    },  # billing
     {
         "uuid": "551629e8-bb28-4734-a3e4-7edb239854b2",
         "id": "551629e8-bb28-4734-a3e4-7edb239854b2",
@@ -116,11 +110,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "9e3bda19-49e5-428a-a2cc-ef03153f14bb"
-        ],
-        "profiletype": 79
-    }, #billing
+        "workflowlevel2_uuid": ["9e3bda19-49e5-428a-a2cc-ef03153f14bb"],
+        "profiletype": 79,
+    },  # billing
     {
         "uuid": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
         "id": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
@@ -139,11 +131,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "7b504be7-36e3-4196-8c60-227b78f8ae96"
-        ],
-        "profiletype": 81
-    }, #billing_with_object
+        "workflowlevel2_uuid": ["7b504be7-36e3-4196-8c60-227b78f8ae96"],
+        "profiletype": 81,
+    },  # billing_with_object
     {
         "uuid": "6a69f3de-5640-409a-9f1d-4c6ce09b058b",
         "id": "6a69f3de-5640-409a-9f1d-4c6ce09b058b",
@@ -162,11 +152,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "37c40d1b-fe9b-4174-86aa-b77adbb739a8"
-        ],
-        "profiletype": 81
-    }, #billing_with_object
+        "workflowlevel2_uuid": ["37c40d1b-fe9b-4174-86aa-b77adbb739a8"],
+        "profiletype": 81,
+    },  # billing_with_object
     {
         "uuid": "589dc550-f65f-4a15-8280-10e9f203cce7",
         "id": "589dc550-f65f-4a15-8280-10e9f203cce7",
@@ -185,11 +173,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "fd98dce0-24f9-4f42-a0f7-febeff3b1174"
-        ],
-        "profiletype": 81
-    }, #billing_with_object
+        "workflowlevel2_uuid": ["fd98dce0-24f9-4f42-a0f7-febeff3b1174"],
+        "profiletype": 81,
+    },  # billing_with_object
     {
         "uuid": "4afb4661-918b-43b3-9555-5868b1922359",
         "id": "4afb4661-918b-43b3-9555-5868b1922359",
@@ -208,11 +194,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "3a63d21a-c111-405b-beaf-a3a0920bc9ac"
-        ],
-        "profiletype": 81
-    }, #billing_with_object
+        "workflowlevel2_uuid": ["3a63d21a-c111-405b-beaf-a3a0920bc9ac"],
+        "profiletype": 81,
+    },  # billing_with_object
     {
         "uuid": "25ef73fa-c00b-42ca-9d41-976527f3a4ae",
         "id": "25ef73fa-c00b-42ca-9d41-976527f3a4ae",
@@ -231,11 +215,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "a12e9ec2-e9cd-45e0-849c-ddbc74293bc9"
-        ],
-        "profiletype": 80
-    }, #object
+        "workflowlevel2_uuid": ["a12e9ec2-e9cd-45e0-849c-ddbc74293bc9"],
+        "profiletype": 80,
+    },  # object
     {
         "uuid": "ebf80e7b-8c84-4bfd-90ca-fea7e18f08b3",
         "id": "ebf80e7b-8c84-4bfd-90ca-fea7e18f08b3",
@@ -254,11 +236,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "6ecf272c-b574-404e-a4eb-e9b9955c72ce"
-        ],
-        "profiletype": 80
-    }, #object
+        "workflowlevel2_uuid": ["6ecf272c-b574-404e-a4eb-e9b9955c72ce"],
+        "profiletype": 80,
+    },  # object
     {
         "uuid": "7623adb5-ee81-4494-9c07-bbd3a1df4cb4",
         "id": "7623adb5-ee81-4494-9c07-bbd3a1df4cb4",
@@ -277,11 +257,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "f0ad19c1-a09b-4e05-a96c-804d6ef3efa8"
-        ],
-        "profiletype": 81
-    }, #billing_with_object
+        "workflowlevel2_uuid": ["f0ad19c1-a09b-4e05-a96c-804d6ef3efa8"],
+        "profiletype": 81,
+    },  # billing_with_object
     {
         "uuid": "a5f42490-7493-4c1d-9cbf-fa1bce1f29b6",
         "id": "a5f42490-7493-4c1d-9cbf-fa1bce1f29b6",
@@ -300,11 +278,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "5aa823a9-d3c6-4c6d-92fa-ec1e92c5ee3d"
-        ],
-        "profiletype": 80
-    }, #object
+        "workflowlevel2_uuid": ["5aa823a9-d3c6-4c6d-92fa-ec1e92c5ee3d"],
+        "profiletype": 80,
+    },  # object
     {
         "uuid": "e1c8d02e-067f-429d-9399-6646c92540e7",
         "id": "e1c8d02e-067f-429d-9399-6646c92540e7",
@@ -323,11 +299,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "af4c9679-5b2c-4f75-8014-f384bca3c5ef"
-        ],
-        "profiletype": 81
-    }, #billing_with_object
+        "workflowlevel2_uuid": ["af4c9679-5b2c-4f75-8014-f384bca3c5ef"],
+        "profiletype": 81,
+    },  # billing_with_object
     {
         "uuid": "d2aeaef8-c3c0-400a-b122-41fc28f7c06b",
         "id": "d2aeaef8-c3c0-400a-b122-41fc28f7c06b",
@@ -346,11 +320,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "7ac41a5c-0a4c-4fff-a1c7-92dc25bc7dba"
-        ],
-        "profiletype": 80
-    }  #object
+        "workflowlevel2_uuid": ["7ac41a5c-0a4c-4fff-a1c7-92dc25bc7dba"],
+        "profiletype": 80,
+    },  # object
 ]
 
 
@@ -374,7 +346,7 @@ contacts = [
             "6f015067-db3e-40be-8f87-8b20fa347752",
         ],
         "contact_type": None,
-    }, # Emalia
+    },  # Emalia
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -387,11 +359,9 @@ contacts = [
         "phones": [{"type": "home", "number": "01721648387"}],
         "notes": None,
         "workflowlevel1_uuids": ["49a4c9d7-8b72-434b-8a48-24540f65a2f3"],
-        "workflowlevel2_uuids": [
-            "999d0b08-759f-49d6-b121-e312c3ea17c5",
-        ],
+        "workflowlevel2_uuids": ["999d0b08-759f-49d6-b121-e312c3ea17c5"],
         "contact_type": None,
-    }, # Violet
+    },  # Violet
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -404,11 +374,9 @@ contacts = [
         "phones": [{"type": "home", "number": "01721648387"}],
         "notes": None,
         "workflowlevel1_uuids": ["49a4c9d7-8b72-434b-8a48-24540f65a2f3"],
-        "workflowlevel2_uuids": [
-            "6f015067-db3e-40be-8f87-8b20fa347752",
-        ],
+        "workflowlevel2_uuids": ["6f015067-db3e-40be-8f87-8b20fa347752"],
         "contact_type": None,
-    }, # Kara
+    },  # Kara
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -421,11 +389,9 @@ contacts = [
         "phones": [{"type": "home", "number": "01721648387"}],
         "notes": None,
         "workflowlevel1_uuids": ["49a4c9d7-8b72-434b-8a48-24540f65a2f3"],
-        "workflowlevel2_uuids": [
-            "7b504be7-36e3-4196-8c60-227b78f8ae96",
-        ],
+        "workflowlevel2_uuids": ["7b504be7-36e3-4196-8c60-227b78f8ae96"],
         "contact_type": None,
-    }, # Aleena
+    },  # Aleena
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -438,11 +404,9 @@ contacts = [
         "phones": [{"type": "home", "number": "01721648387"}],
         "notes": None,
         "workflowlevel1_uuids": ["49a4c9d7-8b72-434b-8a48-24540f65a2f3"],
-        "workflowlevel2_uuids": [
-            "37c40d1b-fe9b-4174-86aa-b77adbb739a8",
-        ],
+        "workflowlevel2_uuids": ["37c40d1b-fe9b-4174-86aa-b77adbb739a8"],
         "contact_type": None,
-    }, # Jasmin
+    },  # Jasmin
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -455,11 +419,9 @@ contacts = [
         "phones": [{"type": "home", "number": "01721648387"}],
         "notes": None,
         "workflowlevel1_uuids": ["49a4c9d7-8b72-434b-8a48-24540f65a2f3"],
-        "workflowlevel2_uuids": [
-            "fd98dce0-24f9-4f42-a0f7-febeff3b1174",
-        ],
+        "workflowlevel2_uuids": ["fd98dce0-24f9-4f42-a0f7-febeff3b1174"],
         "contact_type": None,
-    }, # Lilly
+    },  # Lilly
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -477,7 +439,7 @@ contacts = [
             "a12e9ec2-e9cd-45e0-849c-ddbc74293bc9",
         ],
         "contact_type": None,
-    }, # Ema
+    },  # Ema
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -495,7 +457,7 @@ contacts = [
             "6ecf272c-b574-404e-a4eb-e9b9955c72ce",
         ],
         "contact_type": None,
-    }, # Parag
+    },  # Parag
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -513,7 +475,7 @@ contacts = [
             "5aa823a9-d3c6-4c6d-92fa-ec1e92c5ee3d",
         ],
         "contact_type": None,
-    }, # Kutay
+    },  # Kutay
     {
         "uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "id": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
@@ -531,17 +493,17 @@ contacts = [
             "7ac41a5c-0a4c-4fff-a1c7-92dc25bc7dba",
         ],
         "contact_type": None,
-    }, # Franziska
+    },  # Franziska
 ]
 
 today = datetime.datetime.now().date()
 delta = datetime.date.weekday(today)
 
 Monday = today + datetime.timedelta(days=-delta)
-Tuesday = today + datetime.timedelta(days=1-delta)
-Wednesday = today + datetime.timedelta(days=2-delta)
-Thursday = today + datetime.timedelta(days=3-delta)
-Friday = today + datetime.timedelta(days=4-delta)
+Tuesday = today + datetime.timedelta(days=1 - delta)
+Wednesday = today + datetime.timedelta(days=2 - delta)
+Thursday = today + datetime.timedelta(days=3 - delta)
+Friday = today + datetime.timedelta(days=4 - delta)
 
 
 appointments = [
@@ -562,7 +524,7 @@ appointments = [
         "workflowlevel2_uuids": ["3a63d21a-c111-405b-beaf-a3a0920bc9ac"],
         "contact_uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "summary": "",
-    }, # Parag with billing
+    },  # Parag with billing
     {
         "uuid": "878db099-b8c1-4482-b4a8-11e26168c933",
         "id": "878db099-b8c1-4482-b4a8-11e26168c933",
@@ -584,7 +546,7 @@ appointments = [
         "workflowlevel2_uuids": ["6f015067-db3e-40be-8f87-8b20fa347752"],
         "contact_uuid": "61a012e5-d70b-4801-acb3-507b913fcd54",
         "summary": "",
-    }, # Aleena with billing
+    },  # Aleena with billing
     {
         "uuid": "edeb1722-5b43-4eb0-ae52-b5598e40e704",
         "id": "edeb1722-5b43-4eb0-ae52-b5598e40e704",
@@ -602,7 +564,7 @@ appointments = [
         "workflowlevel2_uuids": ["9e3bda19-49e5-428a-a2cc-ef03153f14bb"],
         "contact_uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "summary": "",
-    }, # Jasmin with billing
+    },  # Jasmin with billing
     {
         "uuid": "ed4c7e5a-5211-486e-a0ca-fcde746a8e2e",
         "id": "ed4c7e5a-5211-486e-a0ca-fcde746a8e2e",
@@ -620,7 +582,7 @@ appointments = [
         "workflowlevel2_uuids": ["7b504be7-36e3-4196-8c60-227b78f8ae96"],
         "contact_uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "summary": "",
-    }, # Lilly with billing
+    },  # Lilly with billing
     {
         "uuid": "9ba34824-a224-4da9-8ace-e24a1006c231",
         "id": "9ba34824-a224-4da9-8ace-e24a1006c231",
@@ -638,7 +600,7 @@ appointments = [
         "workflowlevel2_uuids": ["999d0b08-759f-49d6-b121-e312c3ea17c5"],
         "contact_uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "summary": "",
-    }, # Ema with object
+    },  # Ema with object
     {
         "uuid": "951609b6-32e9-43e6-8f24-692462a81496",
         "id": "951609b6-32e9-43e6-8f24-692462a81496",
@@ -660,7 +622,7 @@ appointments = [
         "workflowlevel2_uuids": ["8132d789-9580-45ad-b22a-9384bce0eed6"],
         "contact_uuid": "61a012e5-d70b-4801-acb3-507b913fcd54",
         "summary": "",
-    }, # Kutay with object
+    },  # Kutay with object
     {
         "uuid": "ae4bde84-7f02-436f-b666-70d032ee8d61",
         "id": "ae4bde84-7f02-436f-b666-70d032ee8d61",
@@ -682,22 +644,14 @@ appointments = [
         "workflowlevel2_uuids": ["9e3bda19-49e5-428a-a2cc-ef03153f14bb"],
         "contact_uuid": "a73ae6b9-66b2-4ae4-9f2c-d1765eb42869",
         "summary": "",
-    }, # Franziska with object
+    },  # Franziska with object
     {
         "uuid": "0be0eda0-bcd1-4126-84c3-96975250025c",
         "id": "0be0eda0-bcd1-4126-84c3-96975250025c",
         "contact": None,
         "notes": [
-            {
-                "id": 3220,
-                "note": "",
-                "type": 1
-            },
-            {
-                "id": 3221,
-                "note": "",
-                "type": 3
-            }
+            {"id": 3220, "note": "", "type": 1},
+            {"id": 3221, "note": "", "type": 3},
         ],
         "driving_times": [],
         "name": "Abwesend",
@@ -710,23 +664,15 @@ appointments = [
         "workflowlevel2_uuids": [],
         "contact_uuid": None,
         "summary": "",
-        "location": None
+        "location": None,
     },
     {
         "uuid": "62e90b81-00f1-4d1c-b12e-7df0edceaab7",
         "id": "62e90b81-00f1-4d1c-b12e-7df0edceaab7",
         "contact": None,
         "notes": [
-            {
-                "id": 3222,
-                "note": "",
-                "type": 1
-            },
-            {
-                "id": 3223,
-                "note": "",
-                "type": 3
-            }
+            {"id": 3222, "note": "", "type": 1},
+            {"id": 3223, "note": "", "type": 3},
         ],
         "driving_times": [],
         "name": "Abwesend",
@@ -735,13 +681,11 @@ appointments = [
         "type": "out-of-office",
         "address": "Abwesend",
         "siteprofile_uuid": None,
-        "invitee_uuids": [
-            "acca56ea-e088-4cd8-bcfa-80545bab2f95" # !!!!!!!!!
-        ],
+        "invitee_uuids": ["acca56ea-e088-4cd8-bcfa-80545bab2f95"],  # !!!!!!!!!
         "workflowlevel2_uuids": [],
         "contact_uuid": None,
         "summary": "",
-        "location": None
+        "location": None,
     },
 ]
 
@@ -867,7 +811,7 @@ time_events = [
         "workflowlevel1_uuid": None,
         "workflowlevel2_uuid": None,
         "appointment_uuid": "62e90b81-00f1-4d1c-b12e-7df0edceaab7",
-    }
+    },
 ]
 
 time_log_entries = []
@@ -985,14 +929,12 @@ SEED_DATA = {
                 "siteprofile_uuid": "siteprofiles",
                 "workflowlevel2_uuids": "workflowlevel2",
             },
-            #"update_dates": {
-                #"start_date": "week_of_the_org_created_week",
-                #"end_date": "week_of_the_org_created_week",
-            #},
-            "set_fields": {
-                "invitee_uuids": "org_core_user_uuids",
-            },
-        }
+            # "update_dates": {
+            # "start_date": "week_of_the_org_created_week",
+            # "end_date": "week_of_the_org_created_week",
+            # },
+            "set_fields": {"invitee_uuids": "org_core_user_uuids"},
+        },
     },
     "products": {
         # 'categories?is_global=true': {
@@ -1004,7 +946,7 @@ SEED_DATA = {
                 "category": "categories",
                 "workflowlevel2_uuid": "workflowlevel2",
             },
-        },
+        }
     },
     "timetracking": {
         "time-event": {
@@ -1018,35 +960,19 @@ SEED_DATA = {
         "time-log-entry": {
             "validate": False,
             "data": time_log_entries,
-            "update_fields": {
-                "time_event": "time-event",
-            },
-            "update_dates": {
-                "start_time": 0,
-                "end_time": {
-                    "hours": 1,
-                    "minutes": 25,
-                },
-            },
+            "update_fields": {"time_event": "time-event"},
+            "update_dates": {"start_time": 0, "end_time": {"hours": 1, "minutes": 25}},
         },
     },
     "documents": {
         "documents": {
             "validate": False,
             "data": documents,
-            "update_fields": {
-                "workflowlevel2_uuids": "workflowlevel2",
-            },
-            "upload_files": {
-                "file_name": "seeds/files/",
-            },
-            "set_fields": {
-                "organization_uuid": "organization_uuid",
-            },
-            "update_dates": {
-                "create_date": 0,
-            },
-        },
+            "update_fields": {"workflowlevel2_uuids": "workflowlevel2"},
+            "upload_files": {"file_name": "seeds/files/"},
+            "set_fields": {"organization_uuid": "organization_uuid"},
+            "update_dates": {"create_date": 0},
+        }
     },
 }
 
