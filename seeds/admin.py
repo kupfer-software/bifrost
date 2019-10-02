@@ -11,7 +11,6 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from workflow.models import Organization
-
 from seeds.seed import SeedEnv, SeedDataMesh, SeedBifrost, SeedLogicModule
 
 
@@ -100,4 +99,19 @@ class OrganizationAdmin(admin.ModelAdmin):
         messages.success(request, f"{organization} - Seed successful.")
         if is_robot_test:
             return Response(status=status.HTTP_201_CREATED)
+        return redirect(request.META["HTTP_REFERER"])
+
+    @staticmethod
+    def remove_seed(request, organization_uuid: string, is_robot_test=False):
+        if is_robot_test:
+            from seeds.data import robot_data as data
+        else:
+            from seeds.data import data
+
+        seed_env = SeedEnv(request, organization_uuid)
+        seed = SeedLogicModule(seed_env, data.SEED_DATA)
+        seed.clear_seed()
+
+        if is_robot_test:
+            return Response(status=status.HTTP_204_NO_CONTENT)
         return redirect(request.META["HTTP_REFERER"])
