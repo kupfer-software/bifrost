@@ -36,6 +36,6 @@ def seed(request: Request, *args: Any, **kwargs: Any) -> Response:
         response = OrganizationAdmin.remove_seed(
             request,
             organization_uuid=str(organization.organization_uuid),
-            is_robot_test=True
+            is_robot_test=True,
         )
         return Response("Seed successfully removed.", status=status.HTTP_204_NO_CONTENT)

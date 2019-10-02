@@ -36,10 +36,8 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "8132d789-9580-45ad-b22a-9384bce0eed6"
-        ],
-        "profiletype": 81
+        "workflowlevel2_uuid": ["8132d789-9580-45ad-b22a-9384bce0eed6"],
+        "profiletype": 81,
     },
     {
         "uuid": "485234bd-1bd6-49b9-81b9-7d84161b6b39",
@@ -59,10 +57,8 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "999d0b08-759f-49d6-b121-e312c3ea17c5"
-        ],
-        "profiletype": 80
+        "workflowlevel2_uuid": ["999d0b08-759f-49d6-b121-e312c3ea17c5"],
+        "profiletype": 80,
     },
     {
         "uuid": "5b04b3aa-f18e-416b-bf5b-bc9c86786159",
@@ -82,10 +78,8 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "6f015067-db3e-40be-8f87-8b20fa347752"
-        ],
-        "profiletype": 80
+        "workflowlevel2_uuid": ["6f015067-db3e-40be-8f87-8b20fa347752"],
+        "profiletype": 80,
     },
     {
         "uuid": "551629e8-bb28-4734-a3e4-7edb239854b2",
@@ -105,10 +99,8 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "9e3bda19-49e5-428a-a2cc-ef03153f14bb"
-        ],
-        "profiletype": 81
+        "workflowlevel2_uuid": ["9e3bda19-49e5-428a-a2cc-ef03153f14bb"],
+        "profiletype": 81,
     },
     {
         "uuid": "5fa79e8b-599c-4a70-97ef-989f0c823e5d",
@@ -128,11 +120,9 @@ siteprofiles = [
         "latitude": "0.0000000000000000",
         "longitude": "0.0000000000000000",
         "notes": "",
-        "workflowlevel2_uuid": [
-            "7b504be7-36e3-4196-8c60-227b78f8ae96"
-        ],
-        "profiletype": 80
-    }
+        "workflowlevel2_uuid": ["7b504be7-36e3-4196-8c60-227b78f8ae96"],
+        "profiletype": 80,
+    },
 ]
 
 
@@ -485,7 +475,7 @@ time_events = [
         "workflowlevel1_uuid": None,
         "workflowlevel2_uuid": "999d0b08-759f-49d6-b121-e312c3ea17c5",
         "appointment_uuid": "9ba34824-a224-4da9-8ace-e24a1006c231",
-    }
+    },
 ]
 
 time_log_entries = []
@@ -607,10 +597,8 @@ SEED_DATA = {
                 "start_date": "week_of_the_org_created_week",
                 "end_date": "week_of_the_org_created_week",
             },
-            "set_fields": {
-                "invitee_uuids": "org_core_user_uuids",
-            },
-        }
+            "set_fields": {"invitee_uuids": "org_core_user_uuids"},
+        },
     },
     "products": {
         # 'categories?is_global=true': {
@@ -622,7 +610,7 @@ SEED_DATA = {
                 "category": "categories",
                 "workflowlevel2_uuid": "workflowlevel2",
             },
-        },
+        }
     },
     "timetracking": {
         "time-event": {
@@ -637,35 +625,19 @@ SEED_DATA = {
             "validate": False,
             "data": time_log_entries,
             "skip_delete": True,
-            "update_fields": {
-                "time_event": "time-event",
-            },
-            "update_dates": {
-                "start_time": 0,
-                "end_time": {
-                    "hours": 1,
-                    "minutes": 25,
-                },
-            },
+            "update_fields": {"time_event": "time-event"},
+            "update_dates": {"start_time": 0, "end_time": {"hours": 1, "minutes": 25}},
         },
     },
     "documents": {
         "documents": {
             "validate": False,
             "data": documents,
-            "update_fields": {
-                "workflowlevel2_uuids": "workflowlevel2",
-            },
-            "upload_files": {
-                "file_name": "seeds/files/",
-            },
-            "set_fields": {
-                "organization_uuid": "organization_uuid",
-            },
-            "update_dates": {
-                "create_date": 0,
-            },
-        },
+            "update_fields": {"workflowlevel2_uuids": "workflowlevel2"},
+            "upload_files": {"file_name": "seeds/files/"},
+            "set_fields": {"organization_uuid": "organization_uuid"},
+            "update_dates": {"create_date": 0},
+        }
     },
 }
 
